@@ -4,43 +4,61 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Lista de compra</title>
+        <title>Lista de artículos</title>
         <link rel="shortcut icon" href="descarga.png" type="image/png" />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <header>
-            <h1>Lista de artículos</h1>
+            <h1>Lista de compra</h1>
             <nav>
-                <ol>
-                    <li><a href="">Principal</a></li>
-                    <li><a href="formulario.html">Lista</a></li>
-                    <li><a href="">Aceca de</a></li>
-                </ol>
+                <ul>
+                    <a href="">Principal</a>
+                    <a href="" class="list">Lista</a>
+                    <a href="">Aceca de</a>
+                </ul>
             </nav>
         </header>
-        <div>
-            <img src="./Ico+.png" alt="agregar" />
-            <p>2/3 Comprados</p>
+        <div class="div-bought">
+            <a href="formulario.html"><img src="Ico+.png" alt="add" /></a>
+            <p class="bought">2/3 Comprados</p>
         </div>
         <section>
-            <ul>
-                <li>
-                    <input type="checkbox" name="compra" id="pan" />
-                    <label for="pan">Pan</label>0.75€
-                </li>
-                <li>
-                    <input type="checkbox" name="compra" id="azucar" />
-                    <label for="azucar">Azúcar</label>
-                </li>
-                <li>
-                    <input type="checkbox" name="compra" id="leche" />
-                    <label for="leche">Leche</label>0.20€
-                </li>
-            </ul>
-            <hr />
+            <div>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="compra" id="pan" />
+                        <label for="pan"><s>Pan</s></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="compra" id="azucar" />
+                        <label for="azucar">Azúcar</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="compra" id="leche" />
+                        <label for="leche"><s>Leche</s></label>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="prices-list">
+                    <li>
+                        0.75€<img src="/X.png" alt="delete" class="x-img" />
+                    </li>
+                    <li><img src="/X.png" alt="delete" class="x-img" /></li>
+                    <li>
+                        1.20€<img src="/X.png" alt="delete" class="x-img" />
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr />
+        <section>
             <p>1.95€</p>
         </section>
-        <footer>Verif CSS</footer>
+
+        <footer>
+            <img src="/Valid_CSS.svg" alt="" />
+        </footer>
     </body>
 </html>
